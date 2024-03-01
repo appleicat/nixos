@@ -22,5 +22,7 @@
   programs.hyprland.xwayland.enable = true;
 
   hardware.opengl.enable = true;
-  
+
+  nix.settings.experimental-features = [ "nix-command" "flakes" ];
+
 }
