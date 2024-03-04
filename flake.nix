@@ -6,7 +6,7 @@
   };
   outputs = inputs@{ nixpkgs, home-manager, ... }: {
     nixosConfigurations = {
-      default = nixpkgs.lib.nixosSystem {
+      nixos = nixpkgs.lib.nixosSystem {
         system = "x86_64-linux";
         modules = [
           ./configuration.nix
@@ -14,7 +14,7 @@
           {
             home-manager.useGlobalPkgs = true;
             home-manager.useUserPackages = true;
-            home-manager.users.jdoe = import ./home.nix;
+            home-manager.users.kitty = import ./home.nix;
           }
         ];
       };
