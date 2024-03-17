@@ -9,12 +9,43 @@
       nixos = nixpkgs.lib.nixosSystem {
         system = "x86_64-linux";
         modules = [
-          ./configuration.nix
+          (
+            { config, lib, pkgs, ... }:
+            {
+              boot.loader.systemd-boot.enable = true;
+              boot.loader.efi.canTouchEfiVariables = true;
+              networking.hostName = "nixos";
+              networking.networkmanager.enable = true;
+              environment.systemPackages = with pkgs; [
+                git
+                micro
+                kitty
+              ];
+              users.defaultUserShell = pkgs.zsh;
+              users.users.kitty = {
+                isNormalUser = true;
+                extraGroups = [ "wheel" "networkmanager" ];
+              };
+              programs.zsh = {
+                enable = true;
+                ohMyZsh = {
+                  enable = true;
+                  theme = "agnoster";
+                };
+              };
+              programs.hyprland.enable = true;
+              programs.hyprland.xwayland.enable = true;
+              hardware.opengl.enable = true;
+              nixpkgs.config.allowUnfree = true;
+              nix.settings.experimental-features = [ "nix-command" "flakes" ];
+            }
+          )
+          ./hardware-configuration.nix
           home-manager.nixosModules.home-manager
           {
             home-manager.useGlobalPkgs = true;
             home-manager.useUserPackages = true;
-            home-manager.users.kitty = import ./home.nix;
+           #home-manager.users.kitty = import ./home.nix;
           }
         ];
       };
