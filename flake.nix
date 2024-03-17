@@ -35,6 +35,10 @@
               programs.hyprland.enable = true;
               programs.hyprland.xwayland.enable = true;
               hardware.opengl.enable = true;
+              fonts.packages = with pkgs; [
+                powerline
+                iosevka
+              ];
               nixpkgs.config.allowUnfree = true;
               nix.settings.experimental-features = [ "nix-command" "flakes" ];
             }
