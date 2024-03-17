@@ -30,7 +30,6 @@
                 enable = true;
                 ohMyZsh = {
                   enable = true;
-                  theme = "agnoster";
                 };
               };
               programs.hyprland.enable = true;
