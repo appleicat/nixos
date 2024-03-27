@@ -9,47 +9,59 @@
       nixos = nixpkgs.lib.nixosSystem {
         system = "x86_64-linux";
         modules = [
-          (
-            { config, lib, pkgs, ... }:
-            {
+          ( { config, lib, pkgs, ... }: {
               boot.loader.systemd-boot.enable = true;
               boot.loader.efi.canTouchEfiVariables = true;
               networking.hostName = "nixos";
               networking.networkmanager.enable = true;
-              environment.systemPackages = with pkgs; [
-                git
-                micro
-                kitty
-              ];
-              users.defaultUserShell = pkgs.zsh;
+              hardware.opengl.enable = true;
+              nixpkgs.config.allowUnfree = true;
+              nix.settings.experimental-features = [ "nix-command" "flakes" ];
+              environment.systemPackages = with pkgs; [ git micro ];
+              programs.zsh.enable = true;
               users.users.kitty = {
                 isNormalUser = true;
                 extraGroups = [ "wheel" "networkmanager" ];
+                shell = pkgs.zsh;
               };
-              programs.zsh = {
-                enable = true;
-                ohMyZsh = {
-                  enable = true;
-                };
-              };
-              programs.hyprland.enable = true;
-              programs.hyprland.xwayland.enable = true;
-              hardware.opengl.enable = true;
-              fonts.packages = with pkgs; [
-                powerline
-                iosevka
-              ];
-              nixpkgs.config.allowUnfree = true;
-              nix.settings.experimental-features = [ "nix-command" "flakes" ];
             }
           )
-          ./hardware-configuration.nix
-          home-manager.nixosModules.home-manager
-          {
-            home-manager.useGlobalPkgs = true;
-            home-manager.useUserPackages = true;
-           #home-manager.users.kitty = import ./home.nix;
-          }
+          ( ./hardware-configuration.nix )
+          ( home-manager.nixosModules.home-manager {
+              home-manager.useGlobalPkgs = true;
+              home-manager.useUserPackages = true;
+              home-manager.users.kitty = (
+                { config, pkgs, ... }: {
+                  home.username = "kitty";
+                  home.homeDirectory = "/home/kitty";
+                  fonts.fontconfig.enable = true;
+                  home.packages = with pkgs; [
+                    powerline
+                    iosevka
+                  ];
+                  programs.zsh = {
+                    enable = true;
+                    oh-my-zsh = {
+                      enable = true;
+                    };
+                  };
+                  programs.btop = {
+                    enable = true;
+                  };
+                  programs.kitty = {
+                    enable = true;
+                  };
+                  programs.waybar = {
+                    enable = true;
+                  };
+                  wayland.windowManager.hyprland = {
+                    enable = true;
+                    xwayland.enable = true;
+                  };
+                }
+              );
+            }
+          )
         ];
       };
     };
