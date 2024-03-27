@@ -27,41 +27,40 @@
             }
           )
           ( ./hardware-configuration.nix )
-          ( home-manager.nixosModules.home-manager {
-              home-manager.useGlobalPkgs = true;
-              home-manager.useUserPackages = true;
-              home-manager.users.kitty = (
-                { config, pkgs, ... }: {
-                  home.username = "kitty";
-                  home.homeDirectory = "/home/kitty";
-                  fonts.fontconfig.enable = true;
-                  home.packages = with pkgs; [
-                    powerline
-                    iosevka
-                  ];
-                  programs.zsh = {
-                    enable = true;
-                    oh-my-zsh = {
-                      enable = true;
-                    };
-                  };
-                  programs.btop = {
+          home-manager.nixosModules.home-manager {
+            home-manager.useGlobalPkgs = true;
+            home-manager.useUserPackages = true;
+            home-manager.users.kitty = (
+              { config, pkgs, ... }: {
+                home.username = "kitty";
+                home.homeDirectory = "/home/kitty";
+                fonts.fontconfig.enable = true;
+                home.packages = with pkgs; [
+                  powerline
+                  iosevka
+                ];
+                programs.zsh = {
+                  enable = true;
+                  oh-my-zsh = {
                     enable = true;
                   };
-                  programs.kitty = {
-                    enable = true;
-                  };
-                  programs.waybar = {
-                    enable = true;
-                  };
-                  wayland.windowManager.hyprland = {
-                    enable = true;
-                    xwayland.enable = true;
-                  };
-                }
-              );
-            }
-          )
+                };
+                programs.btop = {
+                  enable = true;
+                };
+                programs.kitty = {
+                  enable = true;
+                };
+                programs.waybar = {
+                  enable = true;
+                };
+                wayland.windowManager.hyprland = {
+                  enable = true;
+                  xwayland.enable = true;
+                };
+              }
+            );
+          }
         ];
       };
     };
