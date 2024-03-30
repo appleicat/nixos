@@ -73,6 +73,7 @@
                     input = {
                       touchpad = {
                         "natural_scroll" = "yes";
+                        "disable_while_typing" = "true";
                       };
                     };
                     general = {
@@ -81,6 +82,7 @@
                       "gaps_out" = "5";
                       "col.active_border" = "rgba(FFFFFFFF)";
                       "col.inactive_border" = "rgba(FFFFFF00)";
+                      "no_cursor_warps" = "true";
                     };
                     "$MOD" = "SUPER";
                     "$TERM" = "kitty";
@@ -107,8 +109,6 @@
                       "$MOD+SHIFT, LEFT, movewindow, l"
                       "$MOD+SHIFT, RIGHT, movewindow, r"
                       
-                      "ALT, TAB, cyclenext"
-                      
                       "$MOD+CTRL, UP, togglespecialworkspace"
                       "$MOD+CTRL, DOWN, togglespecialworkspace"
                       "$MOD+CTRL, LEFT, workspace, -1"
@@ -118,6 +118,8 @@
                       "$MOD+SHIFT+CTRL, DOWN, movetoworkspace, +0"
                       "$MOD+SHIFT+CTRL, LEFT, movetoworkspace, -1"
                       "$MOD+SHIFT+CTRL, RIGHT, movetoworkspace, +1"
+                      
+                      "ALT, TAB, cyclenext"
                       
                       "$MOD+SHIFT+CTRL, Q, exit"
                     ];
