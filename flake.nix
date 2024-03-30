@@ -92,10 +92,10 @@
                       
                       "$MOD, C, exec, chromium"
                       
-                      "$MOD+SHIFT, Q, killactive,"
-                      "$MOD+SHIFT, SPACE, togglefloating,"
+                      "$MOD+SHIFT, Q, killactive"
+                      "$MOD+SHIFT, SPACE, togglefloating"
                       "$MOD+SHIFT, P, pin"
-                      "$MOD+SHIFT, F, fullscreen,"
+                      "$MOD+SHIFT, F, fullscreen"
                       
                       "$MOD, UP, movefocus, u"
                       "$MOD, DOWN, movefocus, d"
@@ -106,8 +106,6 @@
                       "$MOD+SHIFT, DOWN, movewindow, d"
                       "$MOD+SHIFT, LEFT, movewindow, l"
                       "$MOD+SHIFT, RIGHT, movewindow, r"
-                      
-                      "$MOD+CTRL, S, togglespecialworkspace,"
                       
                       "ALT, TAB, cyclenext"
                       
@@ -120,7 +118,6 @@
                       "$MOD+SHIFT+CTRL, DOWN, movetoworkspace, +0"
                       "$MOD+SHIFT+CTRL, LEFT, movetoworkspace, -1"
                       "$MOD+SHIFT+CTRL, RIGHT, movetoworkspace, +1"
-                      "$MOD+SHIFT+CTRL, S, movetoworkspace, special"
                       
                       "$MOD+SHIFT+CTRL, Q, exit"
                     ];
