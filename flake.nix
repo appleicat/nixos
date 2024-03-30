@@ -53,6 +53,10 @@
                 };
                 programs.kitty = {
                   enable = true;
+                  font = {
+                    package = pkgs.iosevka;
+                    name = "Iosevka";
+                  };
                 };
                 programs.waybar = {
                   enable = true;
