@@ -56,6 +56,46 @@
                 };
                 programs.waybar = {
                   enable = true;
+                  settings = {
+                    main = {
+                      layer = "top";
+                      position = "top";
+                      height = 30;
+                      spacing = 5;
+                      modules-left = [
+                        "hyprland/workspaces"
+                      ];
+                      modules-center = [
+                        "clock"
+                      ];
+                      modules-right = [
+                        "disk"
+                        "memory"
+                        "cpu"
+                        "backlight"
+                        "battery"
+                      ];
+                    };
+                  };
+                  style = ''
+                    * {
+                      background-color: transparent;
+                      color: white;
+                      border: none;
+                      border-radius: 0;
+                      font-family: Iosevka;
+                    }
+                    window#waybar {
+                      background-color: black;
+                      color: white;
+                    }
+                    tooltip {
+                      background-color: black;
+                    }
+                    tooltip label {
+                      color: white;
+                    }
+                  '';
                 };
                 programs.chromium = {
                   enable = true;
