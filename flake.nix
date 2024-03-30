@@ -94,6 +94,7 @@
                       
                       "$MOD+SHIFT, Q, killactive,"
                       "$MOD+SHIFT, SPACE, togglefloating,"
+                      "$MOD+SHIFT, P, pin"
                       "$MOD+SHIFT, F, fullscreen,"
                       
                       "$MOD, UP, movefocus, u"
@@ -101,13 +102,27 @@
                       "$MOD, LEFT, movefocus, l"
                       "$MOD, RIGHT, movefocus, r"
                       
+                      "$MOD+SHIFT, UP, movewindow, u"
+                      "$MOD+SHIFT, DOWN, movewindow, d"
+                      "$MOD+SHIFT, LEFT, movewindow, l"
+                      "$MOD+SHIFT, RIGHT, movewindow, r"
+                      
+                      "$MOD+CTRL, S, togglespecialworkspace,"
+                      
+                      "ALT, TAB, cyclenext"
+                      
+                      "$MOD+CTRL, UP, togglespecialworkspace"
+                      "$MOD+CTRL, DOWN, togglespecialworkspace"
                       "$MOD+CTRL, LEFT, workspace, -1"
                       "$MOD+CTRL, RIGHT, workspace, +1"
                       
+                      "$MOD+SHIFT+CTRL, UP, movetoworkspace, special"
+                      "$MOD+SHIFT+CTRL, DOWN, movetoworkspace, +0"
                       "$MOD+SHIFT+CTRL, LEFT, movetoworkspace, -1"
                       "$MOD+SHIFT+CTRL, RIGHT, movetoworkspace, +1"
+                      "$MOD+SHIFT+CTRL, S, movetoworkspace, special"
                       
-                      "$MOD+SHIFT+CTRL, Q, exit,"
+                      "$MOD+SHIFT+CTRL, Q, exit"
                     ];
                     bindm = [
                       "$MOD, mouse:272, movewindow"
