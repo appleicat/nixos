@@ -176,7 +176,7 @@
                     bindm = [
                       "$MOD, mouse:272, movewindow"
                       "$MOD, mouse:273, resizewindow"
-                      "$MOD+CTRL, mouse:272, resizewindow"
+                      "$MOD+ALT, mouse:272, resizewindow"
                     ];
                   };
                 };
