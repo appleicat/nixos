@@ -127,6 +127,7 @@
                       "col.active_border" = "rgba(FFFFFFFF)";
                       "col.inactive_border" = "rgba(FFFFFF00)";
                       "no_cursor_warps" = "true";
+                      "no_border_on_floating" = "true";
                     };
                     "$MOD" = "SUPER";
                     "$TERM" = "kitty";
