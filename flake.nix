@@ -173,7 +173,7 @@
                     #backlight,
                     #wireplumber,
                     #disk,
-                    #privacy, {
+                    #privacy {
                       background-color: white;
                       color: black;
                       padding: 0 10px;
