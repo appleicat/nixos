@@ -90,6 +90,9 @@
                 programs.bat = {
                   enable = true;
                 };
+                programs.neofetch = {
+                  enable = true;
+                };
                 programs.waybar = {
                   enable = true;
                   settings = {
