@@ -51,6 +51,7 @@
                   powerline
                   iosevka
                   brightnessctl
+                  cmatrix
                 ];
                 home.pointerCursor = {
                   package = pkgs.vanilla-dmz;
