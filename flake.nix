@@ -52,6 +52,7 @@
                   iosevka
                   brightnessctl
                   cmatrix
+                  tty-clock
                 ];
                 home.pointerCursor = {
                   package = pkgs.vanilla-dmz;
