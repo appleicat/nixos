@@ -87,6 +87,9 @@
                 programs.lf = {
                   enable = true;
                 };
+                programs.bat = {
+                  enable = true;
+                };
                 programs.waybar = {
                   enable = true;
                   settings = {
