@@ -52,6 +52,13 @@
                   iosevka
                   brightnessctl
                 ];
+                home.pointerCursor = {
+                  package = pkgs.vanilla-dmz;
+                  name = "Vanilla-DMZ";
+                  size = 16;
+                  gtk.enable = true;
+                  x11.enable = true;
+                };
                 programs.zsh = {
                   enable = true;
                   oh-my-zsh = {
