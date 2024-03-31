@@ -223,6 +223,8 @@
                       "smart_split" = "true";
                     };
                     input = {
+                      "kb_layout" = "us";
+                      "kb_options" = "grp:win_space_toggle";
                       touchpad = {
                         "natural_scroll" = "yes";
                         "disable_while_typing" = "true";
