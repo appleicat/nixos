@@ -81,6 +81,12 @@
                 programs.cava = {
                   enable = true;
                 };
+                programs.ranger = {
+                  enable = true;
+                };
+                programs.lf = {
+                  enable = true;
+                };
                 programs.waybar = {
                   enable = true;
                   settings = {
