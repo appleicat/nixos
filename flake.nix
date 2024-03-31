@@ -97,23 +97,28 @@
                       ];
                       "clock" = {
                         "interval" = 1;
-                        "format-alt" = "{:%A %d %B %Y %H:%M:%S}";
+                        "format" = "{:%A %d %B %Y %H:%M:%S}";
+                        "format-alt" = "{:%H:%M}";
                         "tooltip-format" = "<tt><small>{calendar}</small></tt>";
                       };
                       "battery" = {
                         "format" = "BAT {capacity}";
+                        "format-alt" = "B{capacity}";
                       };
                       "cpu" = {
                         "interval" = 1;
                         "format" = "CPU {usage}";
+                        "format-alt" = "C{usage}";
                       };
                       "memory" = {
                         "interval" = 10;
                         "format" = "MEM {percentage}";
+                        "format-alt" = "M{percentage}";
                       };
                       "temperature" = {
                         "interval" = 10;
                         "format" = "TEMP {temperatureC}";
+                        "format-alt" = "T{temperatureC}";
                       };
                       "network" = {
                         "format" = "{ifname}";
@@ -127,12 +132,15 @@
                       };
                       "backlight" = {
                         "format" = "LIGHT {percent}";
+                        "format-alt" = "L{percent}";
                       };
                       "wireplumber" = {
                         "format" = "AUDIO {volume}";
+                        "format-alt" = "A{volume}";
                       };
                       "disk" = {
                         "format" = "DISK {percentage_used}";
+                        "format-alt" = "D{percentage_used}";
                       };
                       "hyprland/workspaces" = {
                         "format" = "[ {windows} ]";
