@@ -149,7 +149,7 @@
                         "format-ethernet" = "{ipaddr}/{cidr}";
                         "format-disconnected" = "NO NETWORK";
                         "tooltip-format" = "{ifname} via {gwaddr}";
-                        "tooltip-format-wifi" = "{essid}\n\nStrength: {signalStrength}%\nSignal: {signaldBm}dBm\nUP: {bandwidthUpBytes}\nDOWN: {bandwidthDownBytes}";
+                        "tooltip-format-wifi" = "{essid}\n\nStrength: {signalStrength}%\nSignal: {signaldBm}dBm\n  UP: {bandwidthUpBytes}\nDOWN: {bandwidthDownBytes}";
                         "tooltip-format-ethernet" = "{ifname}";
                         "tooltip-disconnected" = "DISCONNECTED";
                       };
