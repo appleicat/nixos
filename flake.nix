@@ -305,6 +305,17 @@
                       "$MOD+SHIFT, LEFT, movewindow, l"
                       "$MOD+SHIFT, RIGHT, movewindow, r"
                       
+                      "$MOD+SHIFT+ALT, UP, moveactive, 0 -15"
+                      "$MOD+SHIFT+ALT, UP, resizeactive, 0 30"
+                      "$MOD+SHIFT+ALT, DOWN, moveactive, 0 15"
+                      "$MOD+SHIFT+ALT, DOWN, resizeactive, 0 -30"
+                      "$MOD+SHIFT+ALT, LEFT, moveactive, 15 0"
+                      "$MOD+SHIFT+ALT, LEFT, resizeactive, -30 0"
+                      "$MOD+SHIFT+ALT, RIGHT, moveactive, -15 0"
+                      "$MOD+SHIFT+ALT, RIGHT, resizeactive, 30 0"
+                      
+                      "$MOD+ALT, C, centerwindow"
+                      
                       "$MOD+CTRL, UP, togglespecialworkspace"
                       "$MOD+CTRL, DOWN, togglespecialworkspace"
                       "$MOD+CTRL, LEFT, workspace, -1"
@@ -324,6 +335,11 @@
                       "$MOD+ALT, LEFT, splitratio, -0.1"
                       "$MOD+ALT, DOWN, splitratio, 0.1"
                       "$MOD+ALT, RIGHT, splitratio, 0.1"
+                      
+                      "$MOD+ALT, UP, moveactive, 0 -10"
+                      "$MOD+ALT, DOWN, moveactive, 0 10"
+                      "$MOD+ALT, LEFT, moveactive, -10 0"
+                      "$MOD+ALT, RIGHT, moveactive, 10 0"
                     ];
                     bindle = [
                       ", XF86MonBrightnessUp, exec, brightnessctl set 5%+"
