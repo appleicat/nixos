@@ -270,8 +270,9 @@
                       "kb_layout" = "us";
                       "kb_options" = "grp:win_space_toggle";
                       touchpad = {
-                        "natural_scroll" = "yes";
+                        "natural_scroll" = "true";
                         "disable_while_typing" = "true";
+                        "scroll_factor" = "0.3";
                       };
                     };
                     general = {
