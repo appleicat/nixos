@@ -249,6 +249,7 @@
                       color: black;
                     }
                     #workspaces button.empty {
+                      background-color: transparent;
                       color: rgba(255,255,255,0);
                     }
                   '';
