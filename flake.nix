@@ -54,6 +54,9 @@
                   cmatrix
                   neofetch
                   tty-clock
+                  swww
+                  mpv
+                  mpvpaper
                 ];
                 home.pointerCursor = {
                   package = pkgs.vanilla-dmz;
