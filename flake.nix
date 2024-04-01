@@ -145,12 +145,13 @@
                         "format-alt" = "T{temperatureC}";
                       };
                       "network" = {
+                        "interval" = 1;
                         "format" = "{ifname}";
                         "format-wifi" = "{essid}";
                         "format-ethernet" = "{ipaddr}/{cidr}";
                         "format-disconnected" = "NO NETWORK";
                         "tooltip-format" = "{ifname} via {gwaddr}";
-                        "tooltip-format-wifi" = "{essid}\nStrength: {signalStrength}%\nSignal: {signaldBm}dBm";
+                        "tooltip-format-wifi" = "{essid}\n\nStrength: {signalStrength}%\nSignal: {signaldBm}dBm\nUP: {bandwidthUpBytes}\nDOWN: {bandwidthDownBytes}";
                         "tooltip-format-ethernet" = "{ifname}";
                         "tooltip-disconnected" = "DISCONNECTED";
                       };
