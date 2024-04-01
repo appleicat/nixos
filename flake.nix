@@ -108,6 +108,12 @@
                 programs.bemenu = {
                   enable = true;
                 };
+                programs.chromium = {
+                  enable = true;
+                };
+                programs.firefox = {
+                  enable = true;
+                };
                 programs.waybar = {
                   enable = true;
                   settings = {
@@ -245,9 +251,6 @@
                     }
                   '';
                 };
-                programs.chromium = {
-                  enable = true;
-                };
                 wayland.windowManager.hyprland = {
                   enable = true;
                   settings = {
@@ -281,12 +284,19 @@
                     bind = [
                       "$MOD, RETURN, exec, $TERM"
                       
+                      "$MOD, Q, killactive"
+                      "$MOD, T, exec, $TERM"
+                      "$MOD, C, exec, chromium"
+                      "$MOD, V, exec, firefox"
+                      "$MOD, F, fullscreen"
+                      "$MOD, D, togglefloating"
+                      "$MOD, S, togglesplit"
+                      
                       "$MOD+CTRL, B, exec, $TERM btop"
                       "$MOD+CTRL, H, exec, $TERM htop"
+                      "$MOD+CTRL, R, exec, $TERM ranger"
+                      "$MOD+CTRL, L, exec, $TERM lf"
                       
-                      "$MOD, C, exec, chromium"
-                      
-                      "$MOD, Q, killactive"
                       "$MOD+SHIFT, Q, killactive"
                       "$MOD+SHIFT, SPACE, togglefloating"
                       "$MOD+SHIFT, P, pin"
