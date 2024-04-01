@@ -283,6 +283,7 @@
                     "$TERM" = "kitty";
                     bind = [
                       "$MOD, RETURN, exec, $TERM"
+                      "$MOD, ESCAPE, exec, hyprctl kill"
                       
                       "$MOD, Q, killactive"
                       "$MOD, T, exec, $TERM"
