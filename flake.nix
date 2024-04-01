@@ -292,6 +292,9 @@
                       "dim_strength" = "0.1";
                       "dim_special" = "0.3";
                       "drop_shadow" = "false";
+                      "blur" = {
+                        "enabled" = "false";
+                      };
                     };
                     "$MOD" = "SUPER";
                     "$TERM" = "kitty";
