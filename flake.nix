@@ -281,6 +281,7 @@
                       "col.active_border" = "rgba(FFFFFFFF)";
                       "col.inactive_border" = "rgba(FFFFFF00)";
                       "no_cursor_warps" = "true";
+                      "cursor_inactive_timeout" = "60";
                     };
                     "$MOD" = "SUPER";
                     "$TERM" = "kitty";
