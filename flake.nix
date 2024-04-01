@@ -204,7 +204,7 @@
                       font-family: Iosevka;
                     }
                     window#waybar {
-                      background-color: black;
+                      background-color: transparent;
                     }
                     tooltip {
                       background-color: white;
@@ -214,7 +214,7 @@
                       font-weight: 300;
                     }
                     .modules-left, .modules-center, .modules-right {
-                      margin: 0 5px;
+                      margin: 5px;
                     }
                     #clock,
                     #battery,
@@ -260,7 +260,7 @@
                       "force_default_wallpaper" = "0";
                     };
                     dwindle = {
-                      "no_gaps_when_only" = "1";
+                      "no_gaps_when_only" = "0";
                       "smart_split" = "true";
                     };
                     input = {
