@@ -234,7 +234,7 @@
                       padding: 0 10px;
                     }
                     #workspaces {
-                      background-color: black;
+                      background-color: transparent;
                     }
                     #workspaces button {
                       background-color: black;
