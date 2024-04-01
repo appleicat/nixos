@@ -98,6 +98,12 @@
                 programs.micro = {
                   enable = true;
                 };
+                services.mpd = {
+                  enable = true;
+                };
+                programs.ncmpcpp = {
+                  enable = true;
+                };
                 programs.mpv = {
                   enable = true;
                 };
