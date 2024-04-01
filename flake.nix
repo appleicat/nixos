@@ -167,7 +167,7 @@
                         "format-alt" = "D{percentage_used}";
                       };
                       "hyprland/workspaces" = {
-                        "format" = "[ {windows} ]";
+                        "format" = "{windows}";
                         "format-window-separator" = " | ";
                         "window-rewrite" = {
                           "class<kitty> title" = "{title}";
