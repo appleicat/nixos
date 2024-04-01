@@ -52,6 +52,7 @@
                   iosevka
                   brightnessctl
                   cmatrix
+                  neofetch
                   tty-clock
                 ];
                 home.pointerCursor = {
@@ -90,9 +91,6 @@
                   enable = true;
                 };
                 programs.bat = {
-                  enable = true;
-                };
-                programs.neofetch = {
                   enable = true;
                 };
                 programs.waybar = {
