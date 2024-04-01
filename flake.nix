@@ -101,6 +101,9 @@
                 programs.mpv = {
                   enable = true;
                 };
+                programs.bemenu = {
+                  enable = true;
+                };
                 programs.waybar = {
                   enable = true;
                   settings = {
