@@ -98,9 +98,7 @@
                 programs.micro = {
                   enable = true;
                 };
-                services.mpd = {
-                  enable = true;
-                };
+               #services.mpd = { enable = true; };
                 programs.ncmpcpp = {
                   enable = true;
                 };
