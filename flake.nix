@@ -93,6 +93,9 @@
                 programs.bat = {
                   enable = true;
                 };
+                programs.micro = {
+                  enable = true;
+                };
                 programs.waybar = {
                   enable = true;
                   settings = {
