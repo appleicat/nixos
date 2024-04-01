@@ -283,6 +283,16 @@
                       "no_cursor_warps" = "true";
                       "cursor_inactive_timeout" = "60";
                     };
+                    decoration = {
+                      "rounding" = "0";
+                      "active_opacity" = "1.0";
+                      "inactive_opacity" = "1.0";
+                      "fullscreen_opacity" = "1.0";
+                      "dim_inactive" = "false";
+                      "dim_strength" = "0.1";
+                      "dim_special" = "0.3";
+                      "drop_shadow" = "false";
+                    };
                     "$MOD" = "SUPER";
                     "$TERM" = "kitty";
                     bind = [
