@@ -214,7 +214,10 @@
                       font-weight: 300;
                     }
                     .modules-left, .modules-center, .modules-right {
-                      margin: 5px;
+                      margin-top: 5px;
+                      margin-left: 5px;
+                      margin-right: 5px;
+                      margin-bottom: 0px;
                     }
                     #clock,
                     #battery,
