@@ -55,7 +55,6 @@
                   neofetch
                   tty-clock
                   swww
-                  mpv
                   mpvpaper
                 ];
                 home.pointerCursor = {
@@ -97,6 +96,9 @@
                   enable = true;
                 };
                 programs.micro = {
+                  enable = true;
+                };
+                programs.mpv = {
                   enable = true;
                 };
                 programs.waybar = {
