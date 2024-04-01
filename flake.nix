@@ -261,6 +261,7 @@
                     misc = {
                       "disable_hyprland_logo" = "true";
                       "force_default_wallpaper" = "0";
+                      "background_color" = "0x000000";
                     };
                     dwindle = {
                       "no_gaps_when_only" = "0";
