@@ -168,10 +168,10 @@
                   settings = {
                     colorscheme = "monokai-dark";
                     infobar = false;
-                    statusline = false;
+                    statusline = true;
                     tabstospaces = true;
                     tabsize = 2;
-                    ruler = false;
+                    ruler = true;
                   };
                 };
                #services.mpd = { enable = true; };
