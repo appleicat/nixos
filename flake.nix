@@ -19,7 +19,11 @@
               boot.loader.timeout = 0;
               networking.hostName = "nixos";
               networking.networkmanager.enable = true;
-              hardware.opengl.enable = true;
+              hardware.opengl = {
+                enable = true;
+                driSupport = true;
+                driSupport32Bit = true;
+              };
               services.pipewire = {
                 enable = true;
                 alsa.enable = true;
