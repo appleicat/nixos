@@ -92,6 +92,16 @@
                   font = {
                     package = pkgs.iosevka;
                     name = "Iosevka";
+                    size = 10;
+                  };
+                  settings = {
+                    "enable_audio_bell" = "no";
+                    "draw_minimal_borders" = "no";
+                    "window_border_width" = "0px";
+                    "window_padding_width" = "10";
+                    "foreground" = "#eeeeee";
+                    "background" = "#000000";
+                    "background_opacity" = "0.7";
                   };
                 };
                 programs.cava = {
