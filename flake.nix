@@ -56,6 +56,9 @@
                   tty-clock
                   swww
                   mpvpaper
+                  bun
+                  deno
+                  nodejs
                 ];
                 home.pointerCursor = {
                   package = pkgs.vanilla-dmz;
