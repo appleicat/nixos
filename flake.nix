@@ -171,6 +171,7 @@
                     statusline = false;
                     tabstospaces = true;
                     tabsize = 2;
+                    ruler = false;
                   };
                 };
                #services.mpd = { enable = true; };
