@@ -392,10 +392,10 @@
                       "$MOD, D, togglefloating"
                       "$MOD, S, togglesplit"
                       
-                      "$MOD+CTRL, B, exec, $TERM btop"
-                      "$MOD+CTRL, H, exec, $TERM htop"
-                      "$MOD+CTRL, R, exec, $TERM ranger"
-                      "$MOD+CTRL, L, exec, $TERM lf"
+                      "$MOD+CTRL, B, exec, alacritty -e btop"
+                      "$MOD+CTRL, H, exec, alacritty -e htop"
+                      "$MOD+CTRL, R, exec, alacritty -e ranger"
+                      "$MOD+CTRL, L, exec, alacritty -e lf"
                       
                       "$MOD+SHIFT, Q, killactive"
                       "$MOD+SHIFT, SPACE, togglefloating"
