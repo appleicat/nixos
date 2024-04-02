@@ -221,6 +221,7 @@
                         "format-window-separator" = " | ";
                         "window-rewrite" = {
                           "class<kitty> title" = "{title}";
+                          "class<Alacritty> title" = "{title}";
                           "class" = "{class}";
                         };
                       };
