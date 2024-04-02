@@ -129,25 +129,25 @@
                       };
                     };
                     colors = {
-                     #primary = {
-                     #  foreground = "#FFFFFF";
-                     #  background = "#000000";
-                     #};
-                     #cursor = {
-                     #  text = "CellBackground";
-                     #  cursor = "CellForeground";
-                     #};
-                      transparent_background_colors = true;
                       primary = {
-                        foreground = "#CDD6F4";
-                        dim_foreground = "#CDD6F4";
-                        bright_foreground = "#CDD6F4";
-                        background = "#1E1E2E";
+                        foreground = "#FFFFFF";
+                        background = "#000000";
                       };
                       cursor = {
-                        text = "#1E1E2E";
-                        cursor = "#F5E0DC";
+                        text = "CellBackground";
+                        cursor = "CellForeground";
                       };
+                      transparent_background_colors = true;
+                     #primary = {
+                     #  foreground = "#CDD6F4";
+                     #  dim_foreground = "#CDD6F4";
+                     #  bright_foreground = "#CDD6F4";
+                     #  background = "#1E1E2E";
+                     #};
+                     #cursor = {
+                     #  text = "#1E1E2E";
+                     #  cursor = "#F5E0DC";
+                     #};
                       vi_mode_cursor = {
                         text = "#1E1E2E";
                         cursor = "#B4BEFE";
