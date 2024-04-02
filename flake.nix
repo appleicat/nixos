@@ -109,6 +109,40 @@
                 };
                 programs.alacritty = {
                   enable = true;
+                  settings = {
+                    window = {
+                      padding = {
+                        x = 15;
+                        y = 15;
+                      };
+                      dynamic_padding = true;
+                      decorations = "None";
+                      dynamic_title = true;
+                    };
+                    font = {
+                      normal = {
+                        family = "Iosevka";
+                      };
+                      size = 10;
+                    };
+                    colors = {
+                      primary = {
+                        foreground = "#FFFFFF";
+                        background = "#000000";
+                      };
+                      cursor = {
+                        text = "CellBackground";
+                        cursor = "CellForeground";
+                      };
+                      transparent_background_colors = true;
+                    };
+                    cursor = {
+                      style = {
+                        shape = "Beam";
+                        blinking = "Off";
+                      };
+                    };
+                  };
                 };
                 programs.wezterm = {
                   enable = true;
