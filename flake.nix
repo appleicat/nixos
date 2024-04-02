@@ -67,6 +67,8 @@
                   bun
                   deno
                   nodejs
+                  warp-terminal
+                  hyper
                 ];
                 home.pointerCursor = {
                   package = pkgs.vanilla-dmz;
