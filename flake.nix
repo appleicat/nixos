@@ -104,6 +104,12 @@
                     "background_opacity" = "0.7";
                   };
                 };
+                programs.alacritty = {
+                  enable = true;
+                };
+                programs.wezterm = {
+                  enable = true;
+                };
                 programs.cava = {
                   enable = true;
                 };
