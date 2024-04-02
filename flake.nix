@@ -165,6 +165,13 @@
                 };
                 programs.micro = {
                   enable = true;
+                  settings = {
+                    colorscheme = "monokai-dark";
+                    infobar = false;
+                    statusline = false;
+                    tabstospaces = true;
+                    tabsize = 2;
+                  };
                 };
                #services.mpd = { enable = true; };
                 programs.ncmpcpp = {
