@@ -332,7 +332,9 @@
                     "$MOD" = "SUPER";
                     "$TERM" = "kitty";
                     bind = [
-                      "$MOD, RETURN, exec, $TERM"
+                      "$MOD, RETURN, exec, kitty"
+                      "$MOD+ALT, RETURN, exec, alacritty"
+                      
                       "$MOD, ESCAPE, exec, hyprctl kill"
                       
                       "$MOD, Q, killactive"
