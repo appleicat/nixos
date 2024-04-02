@@ -213,16 +213,17 @@
                       border: none;
                       border-radius: 0;
                       font-family: Iosevka;
+                      font-weight: 300;
                     }
                     window#waybar {
                       background-color: transparent;
                     }
                     tooltip {
                       background-color: white;
+                      text-shadow: none;
                     }
                     tooltip label {
                       color: black;
-                      font-weight: 300;
                     }
                     .modules-left, .modules-center, .modules-right {
                       margin-top: 5px;
