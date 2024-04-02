@@ -331,10 +331,10 @@
                       };
                     };
                     "$MOD" = "SUPER";
-                    "$TERM" = "kitty";
+                    "$TERM" = "alacritty";
                     bind = [
-                      "$MOD, RETURN, exec, kitty"
-                      "$MOD+ALT, RETURN, exec, alacritty"
+                      "$MOD+ALT, RETURN, exec, kitty"
+                      "$MOD, RETURN, exec, alacritty"
                       
                       "$MOD, ESCAPE, exec, hyprctl kill"
                       
