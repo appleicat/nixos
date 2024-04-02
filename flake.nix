@@ -56,6 +56,7 @@
                 home.homeDirectory = "/home/kitty";
                 fonts.fontconfig.enable = true;
                 home.packages = with pkgs; [
+                  monaspace
                   powerline
                   iosevka
                   brightnessctl
