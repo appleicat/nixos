@@ -124,6 +124,10 @@
                         family = "Iosevka";
                       };
                       size = 10;
+                      offset = {
+                        x = 0;
+                        y = 0;
+                      };
                     };
                     colors = {
                       primary = {
