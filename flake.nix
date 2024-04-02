@@ -104,7 +104,6 @@
                     "window_padding_width" = "10";
                     "foreground" = "#eeeeee";
                     "background" = "#000000";
-                    "background_opacity" = "0.7";
                   };
                 };
                 programs.alacritty = {
