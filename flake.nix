@@ -129,19 +129,57 @@
                       };
                     };
                     colors = {
+                     #primary = {
+                     #  foreground = "#FFFFFF";
+                     #  background = "#000000";
+                     #};
+                     #cursor = {
+                     #  text = "CellBackground";
+                     #  cursor = "CellForeground";
+                     #};
+                      transparent_background_colors = true;
                       primary = {
-                        foreground = "#FFFFFF";
-                        background = "#000000";
+                        foreground = "#CDD6F4";
+                        dim_foreground = "#CDD6F4";
+                        bright_foreground = "#CDD6F4";
+                        background = "#1E1E2E";
                       };
                       cursor = {
-                        text = "CellBackground";
-                        cursor = "CellForeground";
+                        text = "#1E1E2E";
+                        cursor = "#F5E0DC";
                       };
-                      transparent_background_colors = true;
+                      vi_mode_cursor = {
+                        text = "#1E1E2E";
+                        cursor = "#B4BEFE";
+                      };
+                      search = {
+                        matches = {
+                          foreground = "#1E1E2E";
+                          background = "#A6ADC8";
+                        };
+                        focused_match = {
+                          foreground = "#1E1E2E";
+                          background = "#A6E3A1";
+                        };
+                      };
+                      footer_bar = {
+                        foreground = "#1E1E2E";
+                        background = "#A6ADC8";
+                      };
+                      hints = {
+                        start = {
+                          foreground = "#1E1E2E";
+                          background = "#F9E2AF";
+                        };
+                        end = {
+                          foreground = "#1E1E2E";
+                          background = "#A6ADC8";
+                        };
+                      };
                     };
                     cursor = {
                       style = {
-                        shape = "Beam";
+                        shape = "Block";
                         blinking = "Off";
                       };
                     };
