@@ -481,6 +481,7 @@
                       "$MOD, F, fullscreen"
                       "$MOD, D, exec, discord"
                       "$MOD, S, togglesplit"
+                      "$MOD, R, exec, bemenu-run"
                       
                       "$MOD+CTRL, B, exec, alacritty -e btop"
                       "$MOD+CTRL, H, exec, alacritty -e htop"
