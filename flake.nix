@@ -477,9 +477,9 @@
                       "$MOD, Q, killactive"
                       "$MOD, T, exec, $TERM"
                       "$MOD, C, exec, chromium"
-                      "$MOD, V, exec, firefox"
+                      "$MOD, V, exec, code"
                       "$MOD, F, fullscreen"
-                      "$MOD, D, togglefloating"
+                      "$MOD, D, exec, discord"
                       "$MOD, S, togglesplit"
                       
                       "$MOD+CTRL, B, exec, alacritty -e btop"
