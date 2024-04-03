@@ -82,6 +82,8 @@
                   enable = true;
                   oh-my-zsh = {
                     enable = true;
+                    theme = "robbyrussell";
+                    plugins = [ "git" "sudo" "themes" ];
                   };
                 };
                 programs.btop = {
