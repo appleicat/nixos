@@ -70,6 +70,7 @@
                   nodejs
                  #warp-terminal
                  #hyper
+                  discord
                 ];
                 home.pointerCursor = {
                   package = pkgs.vanilla-dmz;
@@ -264,6 +265,9 @@
                   enable = true;
                 };
                 programs.firefox = {
+                  enable = true;
+                };
+                services.mako = {
                   enable = true;
                 };
                 programs.waybar = {
