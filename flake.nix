@@ -71,6 +71,7 @@
                  #warp-terminal
                  #hyper
                   discord
+                  vesktop
                 ];
                 home.pointerCursor = {
                   package = pkgs.vanilla-dmz;
