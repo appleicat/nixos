@@ -68,8 +68,8 @@
                   bun
                   deno
                   nodejs
-                  warp-terminal
-                  hyper
+                 #warp-terminal
+                 #hyper
                 ];
                 home.pointerCursor = {
                   package = pkgs.vanilla-dmz;
@@ -219,9 +219,9 @@
                     };
                   };
                 };
-                programs.wezterm = {
-                  enable = true;
-                };
+               #programs.wezterm = {
+               #  enable = true;
+               #};
                 programs.cava = {
                   enable = true;
                 };
