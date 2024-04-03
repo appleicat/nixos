@@ -457,15 +457,15 @@
                       "dim_special" = "0.3";
                       "drop_shadow" = "false";
                       "blur" = {
-                        "enabled" = "true";
+                        "enabled" = "false";
                         "size" = "4";
                         "passes" = "4";
                         "ignore_opacity" = "true";
                       };
                     };
-                    windowrulev2 = [
-                      "opacity 0.77, class:(kitty|Alacritty)"
-                    ];
+                   #windowrulev2 = [
+                   #  "opacity 0.77, class:(kitty|Alacritty)"
+                   #];
                     "$MOD" = "SUPER";
                     "$TERM" = "alacritty";
                     bind = [
