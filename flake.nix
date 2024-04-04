@@ -127,7 +127,7 @@
                     };
                     font = {
                       normal = {
-                        family = "Monaspace Neon";
+                        family = "Iosevka";
                       };
                       size = 11;
                       offset = {
