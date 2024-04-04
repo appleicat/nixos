@@ -129,7 +129,7 @@
                       normal = {
                         family = "Iosevka";
                       };
-                      size = 11;
+                      size = 13;
                       offset = {
                         x = 0;
                         y = 0;
