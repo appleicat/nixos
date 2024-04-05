@@ -18,7 +18,9 @@
               boot.kernelParams = [ "quiet" "udev.log_level=3" ];
               boot.loader.timeout = 0;
               networking.hostName = "nixos";
+              networking.wireless.iwd.enable = true;
               networking.networkmanager.enable = true;
+              networking.networkmanager.wifi.backend = "iwd";
               hardware.opengl = {
                 enable = true;
                 driSupport = true;
