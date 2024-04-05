@@ -31,6 +31,10 @@
                 pulse.enable = true;
                 jack.enable = true;
               };
+              powerManagement = {
+                enable = true;
+                powertop.enable = true;
+              };
               i18n = {
                 defaultLocale = "en_US.UTF-8";
                 supportedLocales = [ "all" ];
