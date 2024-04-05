@@ -64,8 +64,9 @@
                   monaspace
                   powerline
                   iosevka
-                  input-fonts
                   cozette
+                  input-fonts
+                  noto-fonts
                   brightnessctl
                   cmatrix
                   neofetch
