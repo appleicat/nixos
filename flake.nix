@@ -65,6 +65,7 @@
                   powerline
                   iosevka
                   input-fonts
+                  cozette
                   brightnessctl
                   cmatrix
                   neofetch
