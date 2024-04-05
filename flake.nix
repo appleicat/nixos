@@ -508,7 +508,7 @@
                       "$MOD, F, fullscreen"
                       "$MOD, D, exec, discord"
                       "$MOD, S, togglesplit"
-                      "$MOD, R, exec, bemenu-run -i -p ' RUN' -M '5' -H '32' -n --hp '5' --fn 'Iosevka Light 11' --ff '##000000' --fb '##FFFFFF' --tb '##FFFFFF' --tf '##000000' --cb '##FFFFFF' --cf '##000000' --hb '##000000' --hf '##FFFFFF' --ab '##FFFFFF' --nb '##FFFFFF' --nf '##000000' --af '##000000'"
+                      "$MOD, R, exec, bemenu-run -i -p ' RUN' -M '5' -H '32' -n --hp '5' --fn 'Iosevka Light 11' --single-instance --ff '##000000' --fb '##FFFFFF' --tb '##FFFFFF' --tf '##000000' --cb '##FFFFFF' --cf '##000000' --hb '##000000' --hf '##FFFFFF' --ab '##FFFFFF' --nb '##FFFFFF' --nf '##000000' --af '##000000'"
                       
                       "$MOD+CTRL, B, exec, alacritty -e btop"
                       "$MOD+CTRL, H, exec, alacritty -e htop"
