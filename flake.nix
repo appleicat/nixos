@@ -54,6 +54,7 @@
           home-manager.nixosModules.home-manager {
             home-manager.useGlobalPkgs = true;
             home-manager.useUserPackages = true;
+            nixpkgs.config.input-fonts.acceptLicense = true;
             home-manager.users.kitty = (
               { config, pkgs, ... }: {
                 home.username = "kitty";
@@ -63,6 +64,7 @@
                   monaspace
                   powerline
                   iosevka
+                  input-fonts
                   brightnessctl
                   cmatrix
                   neofetch
