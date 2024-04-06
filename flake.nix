@@ -256,6 +256,9 @@
                #programs.wezterm = {
                #  enable = true;
                #};
+               #programs.foot = {
+               #  enable = true;
+               #};
                 programs.cava = {
                   enable = true;
                   settings = {
