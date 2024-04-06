@@ -84,6 +84,7 @@
                   discord
                   vesktop
                   cmus
+                  ffmpeg-full
                 ];
                 home.pointerCursor = {
                   package = pkgs.vanilla-dmz;
