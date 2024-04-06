@@ -82,6 +82,7 @@
                  #hyper
                   discord
                   vesktop
+                  cmus
                 ];
                 home.pointerCursor = {
                   package = pkgs.vanilla-dmz;
