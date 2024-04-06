@@ -91,6 +91,7 @@
                   grim
                   slurp
                   wf-recorder
+                  retroarchFull
                 ];
                 home.pointerCursor = {
                   package = pkgs.vanilla-dmz;
