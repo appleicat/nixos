@@ -88,6 +88,9 @@
                   fim
                   timg
                   catimg
+                  grim
+                  slurp
+                  wf-recorder
                 ];
                 home.pointerCursor = {
                   package = pkgs.vanilla-dmz;
