@@ -26,6 +26,7 @@
                 driSupport = true;
                 driSupport32Bit = true;
               };
+              sound.enable = true;
               services.pipewire = {
                 enable = true;
                 alsa.enable = true;
