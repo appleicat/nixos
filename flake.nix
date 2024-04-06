@@ -113,6 +113,9 @@
                 programs.tmux = {
                   enable = true;
                 };
+                programs.eza = {
+                  enable = true;
+                };
                 programs.kitty = {
                   enable = true;
                   font = {
