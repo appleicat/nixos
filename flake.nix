@@ -296,6 +296,9 @@
                     ruler = true;
                   };
                 };
+                programs.helix = {
+                  enable = true;
+                };
                 programs.vscode = {
                   enable = true;
                 };
