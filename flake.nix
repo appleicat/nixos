@@ -558,7 +558,9 @@
                       
                       "ALT, TAB, cyclenext"
                       
-                      "$MOD+SHIFT+CTRL, Q, exit"
+                      "$MOD+SHIFT+ALT+CTRL, Q, exit"
+                      "$MOD+SHIFT+ALT+CTRL, R, exec, reboot"
+                      "$MOD+SHIFT+ALT+CTRL, S, exec, shutdown now"
                     ];
                     binde = [
                       "$MOD+ALT, UP, splitratio, -0.1"
