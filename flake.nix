@@ -91,6 +91,7 @@
                   grim
                   slurp
                   wf-recorder
+                  qemu
                   retroarchFull
                 ];
                 home.pointerCursor = {
