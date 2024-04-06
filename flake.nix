@@ -85,6 +85,9 @@
                   vesktop
                   cmus
                   ffmpeg-full
+                  fim
+                  timg
+                  catimg
                 ];
                 home.pointerCursor = {
                   package = pkgs.vanilla-dmz;
