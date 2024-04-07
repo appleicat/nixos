@@ -285,6 +285,9 @@
                 programs.lf = {
                   enable = true;
                 };
+                programs.yazi = {
+                  enable = true;
+                };
                 programs.bat = {
                   enable = true;
                 };
