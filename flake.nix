@@ -542,7 +542,7 @@
                       "$MOD+CTRL, H, exec, alacritty -e htop"
                       "$MOD+CTRL, R, exec, alacritty -e ranger"
                       "$MOD+CTRL, L, exec, alacritty -e lf"
-                      "$MOD+CTRL, Y, exec, alacritty -e EDITOR=micro yazi"
+                      "$MOD+CTRL, Y, exec, EDITOR=micro alacritty -e yazi"
                       
                       "$MOD+SHIFT, Q, killactive"
                       "$MOD+SHIFT, SPACE, togglefloating"
