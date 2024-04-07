@@ -93,6 +93,7 @@
                   wf-recorder
                   qemu
                   retroarchFull
+                  mc
                 ];
                 home.pointerCursor = {
                   package = pkgs.vanilla-dmz;
