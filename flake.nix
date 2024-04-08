@@ -96,9 +96,8 @@
                   mc
                 ];
                 home.pointerCursor = {
-                  package = pkgs.vanilla-dmz;
-                  name = "Vanilla-DMZ";
-                  size = 16;
+                  package = pkgs.apple-cursor;
+                  name = "macOS-Monterey-White";
                   gtk.enable = true;
                   x11.enable = true;
                 };
