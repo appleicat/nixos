@@ -92,7 +92,7 @@
                   slurp
                   wf-recorder
                   qemu
-                  retroarchFull
+                 #retroarchFull
                   mc
                 ];
                 home.pointerCursor = {
