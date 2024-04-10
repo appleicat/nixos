@@ -469,7 +469,10 @@
                 wayland.windowManager.hyprland = {
                   enable = true;
                   settings = {
-                    "exec-once" = "waybar";
+                    exec-once = [
+                      "waybar"
+                      "swww-daemon"
+                    ];
                     misc = {
                       "disable_hyprland_logo" = "true";
                       "force_default_wallpaper" = "0";
