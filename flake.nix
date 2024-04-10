@@ -1,4 +1,5 @@
 {
+  inputs.nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
   outputs = { nixpkgs, home-manager }: {
     nixosConfigurations = {
       nixos = nixpkgs.lib.nixosSystem {
