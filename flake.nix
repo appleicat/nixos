@@ -87,7 +87,7 @@
                   grim
                   slurp
                   wf-recorder
-                  qemu
+                 #qemu
                  #retroarchFull
                   mc
                 ];
