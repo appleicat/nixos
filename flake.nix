@@ -12,7 +12,7 @@
         system = "x86_64-linux";
         modules = [
           (
-            { config, lib, pkgs, ... }: {
+            { pkgs, ... }: {
               boot.loader.systemd-boot.enable = true;
               boot.loader.efi.canTouchEfiVariables = true;
              #boot.plymouth.enable = true;
@@ -62,7 +62,7 @@
             home-manager.useUserPackages = true;
             nixpkgs.config.input-fonts.acceptLicense = true;
             home-manager.users.kitty = (
-              { config, pkgs, ... }: {
+              { pkgs, ... }: {
                 home.username = "kitty";
                 home.homeDirectory = "/home/kitty";
                 fonts.fontconfig.enable = true;
