@@ -74,26 +74,26 @@
                   input-fonts
                   noto-fonts
                   brightnessctl
-                  cmatrix
-                  neofetch
-                  tty-clock
+                 #cmatrix
+                 #neofetch
+                 #tty-clock
                   swww
-                  mpvpaper
+                 #mpvpaper
                   bun
                   deno
                   nodejs
                  #warp-terminal
                  #hyper
-                  discord
-                  vesktop
-                  cmus
-                  ffmpeg-full
-                  fim
-                  timg
-                  catimg
-                  grim
-                  slurp
-                  wf-recorder
+                 #discord
+                 #vesktop
+                 #cmus
+                 #ffmpeg-full
+                 #fim
+                 #timg
+                 #catimg
+                 #grim
+                 #slurp
+                 #wf-recorder
                  #qemu
                  #retroarchFull
                   mc
@@ -309,28 +309,28 @@
                 programs.helix = {
                   enable = true;
                 };
-                programs.vscode = {
-                  enable = true;
-                };
+               #programs.vscode = {
+               #  enable = true;
+               #};
                #services.mpd = { enable = true; };
-                programs.ncmpcpp = {
-                  enable = true;
-                };
-                programs.mpv = {
-                  enable = true;
-                };
+               #programs.ncmpcpp = {
+               #  enable = true;
+               #};
+               #programs.mpv = {
+               #  enable = true;
+               #};
                 programs.bemenu = {
                   enable = true;
                 };
-                programs.chromium = {
-                  enable = true;
-                };
-                programs.firefox = {
-                  enable = true;
-                };
-                services.mako = {
-                  enable = true;
-                };
+               #programs.chromium = {
+               #  enable = true;
+               #};
+               #programs.firefox = {
+               #  enable = true;
+               #};
+               #services.mako = {
+               #  enable = true;
+               #};
                 programs.waybar = {
                   enable = true;
                   settings = {
