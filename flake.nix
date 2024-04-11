@@ -79,9 +79,9 @@
                  #tty-clock
                   swww
                  #mpvpaper
-                  bun
-                  deno
-                  nodejs
+                 #bun
+                 #deno
+                 #nodejs
                  #warp-terminal
                  #hyper
                  #discord
