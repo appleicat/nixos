@@ -35,9 +35,8 @@
   };
   nixpkgs.config.allowUnfree = true;
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
- #environment.systemPackages = with pkgs; [ ];
+  environment.systemPackages = with pkgs; [ micro ];
   programs.git.enable = true;
-  programs.micro.enable = true;
   programs.zsh.enable = true;
   users.users."${username}" = {
     isNormalUser = true;
