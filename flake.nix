@@ -6,10 +6,17 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
   };
-  outputs = { nixpkgs, home-manager, ... }: {
+  outputs = { nixpkgs, home-manager, ... }:
+  let
+    system = "x86_64-linux";
+    hostname = "nixos";
+    username = "kitty";
+    stateVersion = "24.05";
+  in
+  {
     nixosConfigurations = {
-      nixos = nixpkgs.lib.nixosSystem {
-        system = "x86_64-linux";
+      "${hostname}" = nixpkgs.lib.nixosSystem {
+        inherit system;
         modules = [
           (
             { pkgs, ... }: {
@@ -20,7 +27,7 @@
              #boot.initrd.verbose = false;
              #boot.kernelParams = [ "quiet" "udev.log_level=3" ];
               boot.loader.timeout = 0;
-              networking.hostName = "nixos";
+              networking.hostName = "${hostname}";
               networking.wireless.iwd.enable = true;
               networking.networkmanager.enable = true;
               networking.networkmanager.wifi.backend = "iwd";
@@ -49,11 +56,12 @@
               nix.settings.experimental-features = [ "nix-command" "flakes" ];
               environment.systemPackages = with pkgs; [ git micro ];
               programs.zsh.enable = true;
-              users.users.kitty = {
+              users.users."${username}" = {
                 isNormalUser = true;
                 extraGroups = [ "wheel" "networkmanager" "audio" "video" ];
                 shell = pkgs.zsh;
               };
+              system.stateVersion = "${stateVersion}";
             }
           )
           ./hardware-configuration.nix
@@ -61,10 +69,11 @@
             home-manager.useGlobalPkgs = true;
             home-manager.useUserPackages = true;
             nixpkgs.config.input-fonts.acceptLicense = true;
-            home-manager.users.kitty = (
+            home-manager.users."${username}" = (
               { pkgs, ... }: {
-                home.username = "kitty";
-                home.homeDirectory = "/home/kitty";
+                home.stateVersion = "${stateVersion}";
+                home.username = "${username}";
+                home.homeDirectory = "/home/${username}";
                 fonts.fontconfig.enable = true;
                 home.packages = with pkgs; [
                   monaspace
