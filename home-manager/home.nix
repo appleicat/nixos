@@ -5,6 +5,7 @@
     ( import ./fonts.nix )
     ( import ./apps.nix )
     ( import ./pointer.nix )
+    ( import ./alacritty.nix )
     ( import ./settings.nix { inherit username stateVersion; } )
   ];
   programs.zsh = {
