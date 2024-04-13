@@ -5,8 +5,12 @@
       url = "github:nix-community/home-manager";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+    disko = {
+      url = "github:nix-community/disko";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
   };
-  outputs = { nixpkgs, home-manager, ... }:
+  outputs = { nixpkgs, home-manager, disko, ... }:
   let
     system = "x86_64-linux";
     hostname = "nixos";
@@ -19,6 +23,7 @@
         inherit system;
         modules = [
           home-manager.nixosModules.home-manager
+          disko.nixosModules.disko
           ( import ./system/configuration.nix { inherit hostname username stateVersion; } )
           ( import ./system/hardware-configuration.nix )
           ( import ./home-manager/home-manager.nix { inherit username stateVersion; } )
