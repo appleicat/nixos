@@ -1,9 +1,13 @@
 {
-  boot.loader.systemd-boot.enable = true;
-  boot.loader.efi.canTouchEfiVariables = true;
- #boot.plymouth.enable = true;
- #boot.consoleLogLevel = 0;
- #boot.initrd.verbose = false;
- #boot.kernelParams = [ "quiet" "udev.log_level=3" ];
-  boot.loader.timeout = 0;
+  boot = {
+    loader = {
+      systemd-boot.enable = true;
+      efi.canTouchEfiVariables = true;
+      timeout = 0;
+    };
+   #plymouth.enable = true;
+   #consoleLogLevel = 0;
+   #initrd.verbose = false;
+   #kernelParams = [ "quiet" "udev.log_level=3" ];
+  };
 }
