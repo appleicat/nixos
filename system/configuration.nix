@@ -4,6 +4,7 @@
   imports = [
     ( import ./user.nix { inherit username; } )
     ( import ./boot.nix )
+    ( import ./locale.nix )
     ( import ./networking.nix { inherit hostname; } )
     ( import ./settings.nix { inherit stateVersion; } )
   ];
@@ -23,10 +24,6 @@
   powerManagement = {
     enable = true;
     powertop.enable = true;
-  };
-  i18n = {
-    defaultLocale = "en_US.UTF-8";
-    supportedLocales = [ "all" ];
   };
   environment.systemPackages = with pkgs; [ micro ];
   programs.git.enable = true;
