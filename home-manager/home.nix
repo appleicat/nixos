@@ -1,9 +1,6 @@
 { username, stateVersion }:
 { pkgs ? import <nixpkgs> {}, ... }: 
 {
-  home.stateVersion = "${stateVersion}";
-  home.username = "${username}";
-  home.homeDirectory = "/home/${username}";
   fonts.fontconfig.enable = true;
   home.packages = with pkgs; [
     monaspace
