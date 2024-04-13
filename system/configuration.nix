@@ -5,6 +5,7 @@
     ( import ./user.nix { inherit username; } )
     ( import ./boot.nix )
     ( import ./locale.nix )
+    ( import ./power.nix )
     ( import ./networking.nix { inherit hostname; } )
     ( import ./settings.nix { inherit stateVersion; } )
   ];
@@ -20,10 +21,6 @@
     alsa.support32Bit = true;
     pulse.enable = true;
     jack.enable = true;
-  };
-  powerManagement = {
-    enable = true;
-    powertop.enable = true;
   };
   environment.systemPackages = with pkgs; [ micro ];
   programs.git.enable = true;
