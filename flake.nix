@@ -19,7 +19,7 @@
         inherit system;
         modules = [
           ( import ./system/configuration.nix { inherit hostname username stateVersion; } )
-          ./hardware-configuration.nix
+          ( import ./system/hardware-configuration.nix )
           home-manager.nixosModules.home-manager {
             home-manager.useGlobalPkgs = true;
             home-manager.useUserPackages = true;
