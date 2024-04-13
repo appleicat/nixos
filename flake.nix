@@ -23,7 +23,6 @@
           home-manager.nixosModules.home-manager {
             home-manager.useGlobalPkgs = true;
             home-manager.useUserPackages = true;
-            nixpkgs.config.input-fonts.acceptLicense = true;
             home-manager.users."${username}" = (
               { pkgs, ... }: {
                 home.stateVersion = "${stateVersion}";
@@ -35,7 +34,7 @@
                   powerline
                   iosevka
                   cozette
-                  input-fonts
+                  ( input-fonts.override { acceptLicense = true; } )
                   noto-fonts
                   brightnessctl
                  #cmatrix
