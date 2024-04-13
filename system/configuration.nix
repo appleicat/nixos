@@ -1,6 +1,9 @@
 { hostname, username, stateVersion }:
 { pkgs ? import <nixpkgs> {}, ... }:
 {
+  imports = [
+    ( import ./user.nix { inherit username; } )
+  ];
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
  #boot.plymouth.enable = true;
@@ -38,10 +41,5 @@
   environment.systemPackages = with pkgs; [ micro ];
   programs.git.enable = true;
   programs.zsh.enable = true;
-  users.users."${username}" = {
-    isNormalUser = true;
-    extraGroups = [ "wheel" "networkmanager" "audio" "video" ];
-    shell = pkgs.zsh;
-  };
   system.stateVersion = "${stateVersion}";
 }
