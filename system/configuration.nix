@@ -4,11 +4,8 @@
   imports = [
     ( import ./user.nix { inherit username; } )
     ( import ./boot.nix )
+    ( import ./networking.nix { inherit hostname; } )
   ];
-  networking.hostName = "${hostname}";
-  networking.wireless.iwd.enable = true;
-  networking.networkmanager.enable = true;
-  networking.networkmanager.wifi.backend = "iwd";
   hardware.opengl = {
     enable = true;
     driSupport = true;
