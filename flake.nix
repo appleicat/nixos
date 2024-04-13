@@ -21,7 +21,7 @@
           home-manager.nixosModules.home-manager
           ( import ./system/configuration.nix { inherit hostname username stateVersion; } )
           ( import ./system/hardware-configuration.nix )
-          ( import ./home-manager/home-manager.nix )
+          ( import ./home-manager/home-manager.nix { inherit username stateVersion; } )
         ];
       };
     };
