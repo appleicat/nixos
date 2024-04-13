@@ -3,7 +3,7 @@
 {
   imports = [
     ( import ./fonts.nix )
-    ( import ./settings.nix { inherit username, stateVersion; } )
+    ( import ./settings.nix { inherit username stateVersion; } )
   ];
   home.packages = with pkgs; [
     brightnessctl
