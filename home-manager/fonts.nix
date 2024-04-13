@@ -8,4 +8,5 @@
     cozette
     ( input-fonts.override { acceptLicense = true; } )
     noto-fonts
+  ];
 }
