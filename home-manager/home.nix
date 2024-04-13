@@ -6,19 +6,9 @@
     ( import ./apps.nix )
     ( import ./pointer.nix )
     ( import ./alacritty.nix )
+    ( import ./zsh.nix )
     ( import ./settings.nix { inherit username stateVersion; } )
   ];
-  programs.zsh = {
-    enable = true;
-    shellAliases = {
-      H = "Hyprland";
-    };
-    oh-my-zsh = {
-      enable = true;
-      theme = "robbyrussell";
-      plugins = [ "git" "sudo" "themes" ];
-    };
-  };
   programs.btop = {
     enable = true;
   };
