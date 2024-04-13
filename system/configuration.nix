@@ -6,6 +6,7 @@
     ( import ./boot.nix )
     ( import ./locale.nix )
     ( import ./power.nix )
+    ( import ./apps.nix )
     ( import ./networking.nix { inherit hostname; } )
     ( import ./settings.nix { inherit stateVersion; } )
   ];
@@ -22,7 +23,4 @@
     pulse.enable = true;
     jack.enable = true;
   };
-  environment.systemPackages = with pkgs; [ micro ];
-  programs.git.enable = true;
-  programs.zsh.enable = true;
 }
