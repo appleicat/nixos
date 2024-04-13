@@ -6,15 +6,11 @@
     ( import ./boot.nix )
     ( import ./locale.nix )
     ( import ./power.nix )
+    ( import ./hardware.nix )
     ( import ./apps.nix )
     ( import ./networking.nix { inherit hostname; } )
     ( import ./settings.nix { inherit stateVersion; } )
   ];
-  hardware.opengl = {
-    enable = true;
-    driSupport = true;
-    driSupport32Bit = true;
-  };
   sound.enable = true;
   services.pipewire = {
     enable = true;
