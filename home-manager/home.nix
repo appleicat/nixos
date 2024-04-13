@@ -1,6 +1,9 @@
 { username, stateVersion }:
 { pkgs ? import <nixpkgs> {}, ... }: 
 {
+  imports = [
+    ( import ./settings.nix { inherit username, stateVersion; } )
+  ];
   fonts.fontconfig.enable = true;
   home.packages = with pkgs; [
     monaspace
