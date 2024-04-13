@@ -1,4 +1,4 @@
-
+{ pkgs ? import <nixpkgs> {}, ... }:
 {
   programs.kitty = {
     enable = true;
