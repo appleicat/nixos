@@ -5,6 +5,7 @@
     ( import ./user.nix { inherit username; } )
     ( import ./boot.nix )
     ( import ./networking.nix { inherit hostname; } )
+    ( import ./settings.nix { inherit stateVersion; } )
   ];
   hardware.opengl = {
     enable = true;
@@ -27,10 +28,7 @@
     defaultLocale = "en_US.UTF-8";
     supportedLocales = [ "all" ];
   };
-  nixpkgs.config.allowUnfree = true;
-  nix.settings.experimental-features = [ "nix-command" "flakes" ];
   environment.systemPackages = with pkgs; [ micro ];
   programs.git.enable = true;
   programs.zsh.enable = true;
-  system.stateVersion = "${stateVersion}";
 }
