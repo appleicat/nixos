@@ -1,4 +1,4 @@
-
+{ pkgs ? import <nixpkgs> {}, ... }:
 {
   home.pointerCursor = {
     package = pkgs.apple-cursor;
