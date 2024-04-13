@@ -3,33 +3,8 @@
 {
   imports = [
     ( import ./fonts.nix )
+    ( import ./apps.nix )
     ( import ./settings.nix { inherit username stateVersion; } )
-  ];
-  home.packages = with pkgs; [
-    brightnessctl
-   #cmatrix
-   #neofetch
-   #tty-clock
-    swww
-   #mpvpaper
-   #bun
-   #deno
-   #nodejs
-   #warp-terminal
-   #hyper
-   #discord
-   #vesktop
-   #cmus
-   #ffmpeg-full
-   #fim
-   #timg
-   #catimg
-   #grim
-   #slurp
-   #wf-recorder
-   #qemu
-   #retroarchFull
-    mc
   ];
   home.pointerCursor = {
     package = pkgs.apple-cursor;
