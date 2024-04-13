@@ -5,6 +5,7 @@
     ( import ./fonts.nix )
     ( import ./apps.nix )
     ( import ./pointer.nix )
+    ( import ./kitty.nix )
     ( import ./alacritty.nix )
     ( import ./zsh.nix )
     ( import ./settings.nix { inherit username stateVersion; } )
@@ -20,22 +21,6 @@
   };
   programs.eza = {
     enable = true;
-  };
-  programs.kitty = {
-    enable = true;
-    font = {
-      package = pkgs.iosevka;
-      name = "Iosevka";
-      size = 10;
-    };
-    settings = {
-      "enable_audio_bell" = "no";
-      "draw_minimal_borders" = "no";
-      "window_border_width" = "0px";
-      "window_padding_width" = "10";
-      "foreground" = "#eeeeee";
-      "background" = "#000000";
-    };
   };
                #programs.wezterm = {
                #  enable = true;
