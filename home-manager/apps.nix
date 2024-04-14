@@ -1,28 +1,20 @@
 { pkgs ? import <nixpkgs> {}, ... }:
 {
   home.packages = with pkgs; [
-   #cmatrix
-   #neofetch
-   #tty-clock
+    cmatrix
+    neofetch
+    tty-clock
     swww
-   #mpvpaper
-   #bun
-   #deno
-   #nodejs
    #warp-terminal
    #hyper
-   #discord
-   #vesktop
-   #cmus
-   #ffmpeg-full
-   #fim
-   #timg
-   #catimg
-   #grim
-   #slurp
-   #wf-recorder
-   #qemu
-   #retroarchFull
+    cmus
+    ffmpeg-full
+    fim
+    timg
+    catimg
+    grim
+    slurp
+    wf-recorder
     mc
     playerctl
   ];
@@ -70,27 +62,20 @@
   programs.helix = {
     enable = true;
   };
- #programs.vscode = {
- #  enable = true;
- #};
- #services.mpd = { enable = true; };
-  services.playerctld = { enable = true; };
- #programs.ncmpcpp = {
- #  enable = true;
- #};
- #programs.mpv = {
- #  enable = true;
- #};
+  services.mpd = {
+    enable = true;
+    musicDirectory = "~/.music";
+  };
+  services.playerctld = {
+    enable = true;
+  };
+  programs.ncmpcpp = {
+    enable = true;
+  };
   programs.bemenu = {
     enable = true;
   };
- #programs.chromium = {
- #  enable = true;
- #};
- #programs.firefox = {
- #  enable = true;
- #};
- #services.mako = {
- #  enable = true;
- #};
+  services.mako = {
+    enable = true;
+  };
 }
