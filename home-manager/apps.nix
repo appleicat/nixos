@@ -5,7 +5,6 @@
     neofetch
     tty-clock
     swww
-   #warp-terminal
    #hyper
     cmus
     ffmpeg-full
