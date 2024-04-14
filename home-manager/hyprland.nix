@@ -50,10 +50,10 @@
         };
       };
       "$MOD" = "SUPER";
-      "$TERM" = "alacritty";
+      "$TERM" = "foot";
       bind = [
-        "$MOD+ALT, RETURN, exec, kitty"
-        "$MOD, RETURN, exec, alacritty"
+        "$MOD+ALT, RETURN, exec, alacritty"
+        "$MOD, RETURN, exec, $TERM"
         
         "$MOD, ESCAPE, exec, hyprctl kill"
         
@@ -64,11 +64,12 @@
         "$MOD, R, exec, bemenu-run -i -p ' RUN' -M '5' -H '32' -n --hp '5' --fn 'Iosevka Light 11' --single-instance --ff '##000000' --fb '##FFFFFF' --tb '##FFFFFF' --tf '##000000' --cb '##FFFFFF' --cf '##000000' --hb '##000000' --hf '##FFFFFF' --ab '##FFFFFF' --nb '##FFFFFF' --nf '##000000' --af '##000000'"
         "$MOD+ALT, R, exec, bemenu-run -i -p ' RUN' -M '5' --hp '5' --fn 'Cozette 8' --single-instance --ff '##000000' --fb '##FFFFFF' --tb '##FFFFFF' --tf '##000000' --cb '##FFFFFF' --cf '##000000' --hb '##000000' --hf '##FFFFFF' --ab '##FFFFFF' --nb '##FFFFFF' --nf '##000000' --af '##000000'"
         
-        "$MOD+CTRL, B, exec, alacritty -e btop"
-        "$MOD+CTRL, H, exec, alacritty -e htop"
-        "$MOD+CTRL, R, exec, alacritty -e ranger"
-        "$MOD+CTRL, L, exec, alacritty -e lf"
-        "$MOD+CTRL, Y, exec, EDITOR=micro alacritty -e yazi"
+        "$MOD+CTRL, B, exec, $TERM btop"
+        "$MOD+CTRL, H, exec, $TERM htop"
+        "$MOD+CTRL, R, exec, $TERM ranger"
+        "$MOD+CTRL, L, exec, $TERM lf"
+        "$MOD+CTRL, T, exec, $TERM tmux"
+        "$MOD+CTRL, Y, exec, EDITOR=micro $TERM yazi"
         
         "$MOD+SHIFT, Q, killactive"
         "$MOD+SHIFT, SPACE, togglefloating"
