@@ -59,10 +59,7 @@
         
         "$MOD, Q, killactive"
         "$MOD, T, exec, $TERM"
-        "$MOD, C, exec, chromium"
-        "$MOD, V, exec, code"
         "$MOD, F, fullscreen"
-        "$MOD, D, exec, discord"
         "$MOD, S, togglesplit"
         "$MOD, R, exec, bemenu-run -i -p ' RUN' -M '5' -H '32' -n --hp '5' --fn 'Iosevka Light 11' --single-instance --ff '##000000' --fb '##FFFFFF' --tb '##FFFFFF' --tf '##000000' --cb '##FFFFFF' --cf '##000000' --hb '##000000' --hf '##FFFFFF' --ab '##FFFFFF' --nb '##FFFFFF' --nf '##000000' --af '##000000'"
         "$MOD+ALT, R, exec, bemenu-run -i -p ' RUN' -M '5' --hp '5' --fn 'Cozette 8' --single-instance --ff '##000000' --fb '##FFFFFF' --tb '##FFFFFF' --tf '##000000' --cb '##FFFFFF' --cf '##000000' --hb '##000000' --hf '##FFFFFF' --ab '##FFFFFF' --nb '##FFFFFF' --nf '##000000' --af '##000000'"
