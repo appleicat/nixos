@@ -7,6 +7,7 @@
     ( import ./pointer.nix )
     ( import ./kitty.nix )
     ( import ./alacritty.nix )
+    ( import ./foot.nix )
     ( import ./zsh.nix )
     ( import ./cava.nix )
     ( import ./waybar.nix )
