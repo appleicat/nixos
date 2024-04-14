@@ -1,11 +1,11 @@
 { pkgs ? import <nixpkgs> {}, ... }:
 {
   home.packages = with pkgs; [
+   #hyper
     cmatrix
     neofetch
     tty-clock
     swww
-   #hyper
     cmus
     ffmpeg-full
     fim
@@ -29,9 +29,6 @@
   programs.eza = {
     enable = true;
   };
- #programs.wezterm = {
- #  enable = true;
- #};
   programs.ranger = {
     enable = true;
   };
@@ -74,4 +71,7 @@
   services.mako = {
     enable = true;
   };
+ #programs.wezterm = {
+ #  enable = true;
+ #};
 }
