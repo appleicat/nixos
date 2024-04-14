@@ -1,9 +1,9 @@
 {
   powerManagement = {
     enable = true;
-    powertop.enable = true;
+   #powertop.enable = true;
   };
-  services.upower = {
-    enable = true;
-  };
+ #services.upower = {
+ #  enable = true;
+ #};
 }
