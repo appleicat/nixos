@@ -49,9 +49,6 @@
           "ignore_opacity" = "true";
         };
       };
-     #windowrulev2 = [
-     #  "opacity 0.77, class:(kitty|Alacritty)"
-     #];
       "$MOD" = "SUPER";
       "$TERM" = "alacritty";
       bind = [
