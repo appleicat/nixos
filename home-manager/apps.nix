@@ -24,6 +24,7 @@
    #qemu
    #retroarchFull
     mc
+    playerctl
   ];
   programs.btop = {
     enable = true;
@@ -73,6 +74,7 @@
  #  enable = true;
  #};
  #services.mpd = { enable = true; };
+  services.playerctld = { enable = true; };
  #programs.ncmpcpp = {
  #  enable = true;
  #};
