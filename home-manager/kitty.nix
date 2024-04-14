@@ -15,5 +15,5 @@
       "foreground" = "#FFFFFF";
       "background" = "#000000";
     };
-  }
+  };
 }
