@@ -1,7 +1,6 @@
 { pkgs ? import <nixpkgs> {}, ... }:
 {
   home.packages = with pkgs; [
-    brightnessctl
    #cmatrix
    #neofetch
    #tty-clock
