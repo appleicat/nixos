@@ -77,6 +77,7 @@
           "window-rewrite" = {
             "class<kitty> title" = "{title}";
             "class<Alacritty> title" = "{title}";
+            "class<foot> title" = "{title}";
             "class" = "{class}";
           };
         };
