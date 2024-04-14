@@ -32,9 +32,6 @@
  #programs.wezterm = {
  #  enable = true;
  #};
- #programs.foot = {
- #  enable = true;
- #};
   programs.ranger = {
     enable = true;
   };
