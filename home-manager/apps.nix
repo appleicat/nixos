@@ -7,7 +7,7 @@
     tty-clock
     swww
     cmus
-    ffmpeg-full
+    ffmpeg
     fim
     timg
     catimg
