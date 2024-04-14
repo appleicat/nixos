@@ -59,24 +59,20 @@
         "$MOD, ESCAPE, exec, hyprctl kill"
         
         "$MOD, Q, killactive"
-        "$MOD, T, exec, $TERM"
         "$MOD, F, fullscreen"
         "$MOD, S, togglesplit"
         
         "$MOD, R, exec, bemenu-run -i -p ' RUN' -M '5' -H '32' -n --hp '5' --fn 'Iosevka Light 11' --single-instance --ff '##000000' --fb '##FFFFFF' --tb '##FFFFFF' --tf '##000000' --cb '##FFFFFF' --cf '##000000' --hb '##000000' --hf '##FFFFFF' --ab '##FFFFFF' --nb '##FFFFFF' --nf '##000000' --af '##000000'"
         "$MOD+ALT, R, exec, bemenu-run -i -p ' RUN' -M '5' --hp '5' --fn 'Cozette 8' --single-instance --ff '##000000' --fb '##FFFFFF' --tb '##FFFFFF' --tf '##000000' --cb '##FFFFFF' --cf '##000000' --hb '##000000' --hf '##FFFFFF' --ab '##FFFFFF' --nb '##FFFFFF' --nf '##000000' --af '##000000'"
         
-        "$MOD+CTRL, B, exec, $TERM btop"
-        "$MOD+CTRL, H, exec, $TERM htop"
-        "$MOD+CTRL, R, exec, $TERM ranger"
-        "$MOD+CTRL, L, exec, $TERM lf"
-        "$MOD+CTRL, T, exec, $TERM tmux"
-        "$MOD+CTRL, Y, exec, EDITOR=micro $TERM yazi"
+        "$MOD, B, exec, $TERM btop"
+        "$MOD, T, exec, $TERM tmux"
+        "$MOD, Y, exec, EDITOR=micro $TERM yazi"
         
-        "$MOD+SHIFT, Q, killactive"
-        "$MOD+SHIFT, SPACE, togglefloating"
-        "$MOD+SHIFT, P, pin"
-        "$MOD+SHIFT, F, fullscreen"
+        "$MOD+ALT, Q, killactive"
+        "$MOD+ALT, SPACE, togglefloating"
+        "$MOD+ALT, P, pin"
+        "$MOD+ALT, F, fullscreen"
         "$MOD+ALT, S, togglesplit"
         
         "$MOD, UP, movefocus, u"
