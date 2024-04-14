@@ -2,6 +2,7 @@
   hardware = {
     bluetooth = {
       enable = true;
+      powerOnBoot = false;
     };
     brillo.enable = true;
     opengl = {
