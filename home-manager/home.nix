@@ -8,6 +8,7 @@
     ( import ./kitty.nix )
     ( import ./alacritty.nix )
     ( import ./zsh.nix )
+    ( import ./cava.nix )
     ( import ./settings.nix { inherit username stateVersion; } )
   ];
   programs.btop = {
@@ -22,32 +23,12 @@
   programs.eza = {
     enable = true;
   };
-  #programs.wezterm = {
-  #  enable = true;
-  #};
-  #programs.foot = {
-  #  enable = true;
-  #};
-  programs.cava = {
-    enable = true;
-    settings = {
-      general = {
-        autosens = 1;
-        lower_cutoff_freq = 20;
-        higher_cutoff_freq = 20000;
-      };
-      output = {
-        channels = "mono";
-        mono_option = "average";
-        alacritty_sync = 1;
-      };
-      smoothing = {
-        monstercat = 1;
-        waves = 0;
-        noise_reduction = 33;
-      };
-    };
-  };
+ #programs.wezterm = {
+ #  enable = true;
+ #};
+ #programs.foot = {
+ #  enable = true;
+ #};
   programs.ranger = {
     enable = true;
   };
