@@ -8,5 +8,7 @@
     cozette
     ( input-fonts.override { acceptLicense = true; } )
     noto-fonts
+    noto-fonts-emoji
+    jetbrains-mono
   ];
 }
