@@ -3,7 +3,7 @@
 {
   imports = [
     ( import ./user.nix { inherit username; } )
-    ( import ./boot.nix )
+    ( import ./boot.nix { silent = false; } )
     ( import ./locale.nix )
     ( import ./power.nix )
     ( import ./sound.nix )
