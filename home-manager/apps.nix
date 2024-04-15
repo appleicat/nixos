@@ -16,6 +16,7 @@
     wf-recorder
     mc
     playerctl
+    helvum
   ];
   programs.btop = {
     enable = true;
