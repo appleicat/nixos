@@ -72,6 +72,9 @@
   services.mako = {
     enable = true;
   };
+  services.easyeffects = {
+    enable = true;
+  };
  #programs.wezterm = {
  #  enable = true;
  #};
