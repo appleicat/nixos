@@ -39,6 +39,9 @@
   programs.yazi = {
     enable = true;
   };
+  programs.xplr = {
+    enable = true;
+  };
   programs.bat = {
     enable = true;
   };
