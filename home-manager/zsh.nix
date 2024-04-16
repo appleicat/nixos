@@ -3,6 +3,8 @@
     enable = true;
     shellAliases = {
       H = "Hyprland";
+      cam+ = "sudo modprobe uvcvideo";
+      cam- = "sudo rmmod -f uvcvideo";
     };
     oh-my-zsh = {
       enable = true;
