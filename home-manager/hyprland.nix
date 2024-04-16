@@ -68,6 +68,9 @@
         ", PRINT, exec, grim - | wl-copy"
         "$MOD, PRINT, exec, grim"
         
+        "$MOD, M, exec, amixer set Capture toggle"
+        "$MOD, M, exec, amixer set Mic toggle"
+        
         "$MOD, B, exec, $TERM btop"
         "$MOD, T, exec, $TERM tmux"
         "$MOD, Y, exec, EDITOR=micro $TERM yazi"
