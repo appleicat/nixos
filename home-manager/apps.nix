@@ -17,6 +17,7 @@
     mc
     playerctl
     helvum
+    easyeffects
   ];
   programs.btop = {
     enable = true;
@@ -77,9 +78,6 @@
     enable = true;
   };
   services.mako = {
-    enable = true;
-  };
-  services.easyeffects = {
     enable = true;
   };
  #programs.wezterm = {
